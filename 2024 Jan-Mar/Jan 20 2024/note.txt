@@ -1,0 +1,58 @@
+TrainRoom_1 new nonnegativeWeights for CL075_230228
+  - modelWeights_with_sigmoid
+    - train_with_data_ending_near_stimuli_offset (newest for old protocol - 3-run data)
+    - train_with_data_ending_near_stimuli_onset (newest for old protocol - 3-run data)
+       (the above two are same with different parameter settings.
+       both add the settings of where to select data for training)
+
+TrainRoom_2 new nonnegativeWeights for CL090_230515
+  - modelWeights_with_sigmoid
+    - train_with_data_ending_near_stimuli_offset (newest for old protocol - 3-run data)
+    - train_with_data_ending_near_stimuli_onset (newest for old protocol - 3-run data)
+       (the above two are same with different parameter settings.
+       both add the settings of where to select data for training)
+
+TrainRoom_3 new nonnegativeWeights for CL096_231018's old protocol data
+  - modelWeights_with_sigmoid
+    - train_with_data_randomly_selected (normal version, not newest but newer vesion than the next two)
+    - train_with_data_ending_near_stimuli_offset
+    - train_with_data_ending_near_stimuli_onset
+    - train_with_data_randomly_selected (basedline reduction) (newest for old protocol - 2-run data)
+    Note:
+    (1) The first three are same with different parameter settings.
+    Both add the settings of where to select data for training.
+    (2) train_with_data_randomly_selected is newer than the other two, 
+    because it updates the code for plotting in section 
+    "Functions: read and plot structure data".
+    (3) train_with_data_randomly_selected (basedline reduction) is the newest one with 
+    update of adding high-pass filter for basedline reduction of signal traces.
+    (4) Code of train_with_data_ending_near_stimuli_offset and train_with_data_ending_near_stimuli_onset 
+    is with some changes for 2-run data, adapted from the code in TrainRoom_1 and TrainRoom_2 that is for 3-run data.
+    This also means that code in TrainRoom_1 and TrainRoom_2 is without update of plotting in section 
+    "Functions: read and plot structure data" and high-pass filter for basedline reduction of signal traces.
+
+TrainRoom_4 new file with data processing hyperparameters modified for CL096_231018's new protocol data, i.e, run 2  
+  - modelWeights_with_sigmoid
+    adding train_with_data_ending_near_stimuli_onset/offset
+
+TrainRoom_5 file for cross-dataset (cross runs) testing of models of a cell
+  - FluoData_Fitting_plus_v3_LocalVersion_Simplified_OldProtocol.ipynb (newest for old protocol)
+    This code is copied and revised from the file 
+    "TrainRoom_3/modelWeights_with_sigmoid/train_with_data_randomly_selected (basedline reduction)/FluoData_Fitting_plus_v3_LocalVersion_Simplified.ipynb"
+  - FluoData_Fitting_plus_v3_LocalVersion_Simplified_NewProtocol(old).ipynb (deprecated, use the newest one)
+    This code is copied and revised from the file 
+    "TrainRoom_4/modelWeights_with_sigmoid/FluoData_Fitting_plus_v3_LocalVersion_Simplified_NewData.ipynb"
+  - FluoData_Fitting_plus_v3_LocalVersion_Simplified_NewProtocol.ipynb (newest for new protocol)
+    This code is copied and revised from the file 
+    "TrainRoom_6/modelWeights_with_sigmoid/FluoData_Fitting_plus_v3_LocalVersion_Simplified_NewData.ipynb"
+  Note:
+  (1) Code here is used for test, like testing the model trained on run 2 data with run 3 and run 4 data of the same cell.
+  So, code for traning will not be run.
+  (2) "FluoData_Fitting_plus_v3_LocalVersion_Simplified_NewProtocol.ipynb" uses the New Protocol data as the test dataset;
+  "FluoData_Fitting_plus_v3_LocalVersion_Simplified_OldProtocol.ipynb" uses the Old Protocol data as the test dataset.
+  (3) "FluoData_Fitting_plus_v3_LocalVersion_Simplified_NewProtocol.ipynb" is with setting of whether to use the high-pass 
+  filter. FluoData_Fitting_plus_v3_LocalVersion_Simplified_NewProtocol(old).ipynb isn't with that function.
+
+TrainRoom_6 update of code in TrainRoom_4 (newest for new data protocol, run 2 of CL096_231018)
+  - modelWeights_with_sigmoid
+    adding high-pass filter for basedline reduction of signal traces.

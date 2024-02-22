@@ -1,0 +1,21 @@
+TrainRoom_1 new nonnegativeWeights for CL075_230228
+  - modelWeights_with_sigmoid
+    - train_with_data_ending_near_stimuli_offset (newest)
+    - train_with_data_ending_near_stimuli_onset (newest)
+       (the above two are same with different parameter settings.
+       both add the settings of where to randomly select data for training)
+
+TrainRoom_2 new nonnegativeWeights for CL090_230515
+  - modelWeights_with_sigmoid
+    - train_with_data_ending_near_stimuli_offset (newest)
+    - train_with_data_ending_near_stimuli_onset (newest)
+       (the above two are same with different parameter settings.
+       both add the settings of where to randomly select data for training)
+
+TrainRoom_3 new file with data processing hyperparameters modified for new data CL096_231018
+
+TrainRoom_4 new file with data processing hyperparameters modified for new data CL096_231018 (newest for new data)
+    adding train_with_data_ending_near_stimuli_onset
+
+TrainRoom_5 new file with data processing hyperparameters modified for new data CL096_231018 (newest for new data)
+    adding train_with_data_ending_near_stimuli_offset

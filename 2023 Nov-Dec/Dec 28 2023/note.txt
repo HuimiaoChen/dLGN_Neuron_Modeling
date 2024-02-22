@@ -1,0 +1,29 @@
+TrainRoom_1 new nonnegativeWeights for CL075_230228
+  - modelWeights_with_sigmoid
+    - train_with_data_ending_near_stimuli_offset (newest)
+    - train_with_data_ending_near_stimuli_onset (newest)
+       (the above two are same with different parameter settings.
+       both add the settings of where to select data for training)
+
+TrainRoom_2 new nonnegativeWeights for CL090_230515
+  - modelWeights_with_sigmoid
+    - train_with_data_ending_near_stimuli_offset (newest)
+    - train_with_data_ending_near_stimuli_onset (newest)
+       (the above two are same with different parameter settings.
+       both add the settings of where to select data for training)
+
+TrainRoom_3 new nonnegativeWeights for CL096_231018's old protocol data
+  - modelWeights_with_sigmoid
+    - train_with_data_randomly_selected (normal version) (newest)
+    - train_with_data_ending_near_stimuli_offset
+    - train_with_data_ending_near_stimuli_onset
+       (the above three are same with different parameter settings.
+       both add the settings of where to select data for training.
+       train_with_data_randomly_selected is the newest, because
+       it updates the code for plotting in section 
+       "Functions: read and plot structure data")
+    Note: code here is with some change for adapting 2-run data; 
+          code in TrainRooms 1 and 2 is for 3-run data.
+
+TrainRoom_4 new file with data processing hyperparameters modified for new data CL096_231018 (newest for new data)
+    adding train_with_data_ending_near_stimuli_onset/offset

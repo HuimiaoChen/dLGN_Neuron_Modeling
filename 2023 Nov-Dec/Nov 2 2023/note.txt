@@ -1,0 +1,24 @@
+TrainRoom_1 new control for nonnegativeWeights for CL090_230515
+            FluoData_Fitting_plus_v2_Special_CL090_230515_s202310101456.ipynb
+            FluoData_Fitting_plus_v2_local_copy4update.ipynb updates F Value std comparison and 
+            deletes the end 1-in 1-out linear layer for no sigmoid model
+            modelWeights_with_sigmoid -- FluoData_Fitting_plus_v3_LocalVersion.ipynb
+
+TrainRoom_2 new nonnegativeWeights for CL090_230515
+            FluoData_Fitting_plus_v2_Special_CL090_230515_nonnegativeWeights_s202310101456.ipynb
+            FluoData_Fitting_plus_v2_local_copy4update.ipynb update F Value std comparison and 
+            deletes the end 1-in 1-out linear layer for no sigmoid model
+            modelWeights_with_sigmoid -- FluoData_Fitting_plus_v3_LocalVersion.ipynb 
+
+TrainRoom_3 new nonnegativeWeights for CL090_230515 stronger penalty
+            FluoData_Fitting_plus_v2_Special_CL090_230515_nonnegativeWeights_strgPnlty_s202310061356.ipynb
+            FluoData_Fitting_plus_v3_LocalVersion.ipynb
+            modelWeights_with_sigmoid -- FluoData_Fitting_plus_v3_LocalVersion.ipynb
+
+TrainRoom_4 new control for nonnegativeWeights for  CL075_230228 
+            modelWeights_with_sigmoid - FluoData_Fitting_plus_v3_LocalVersion.ipynb (newest)
+            modelWeights_without_sigmoid - FluoData_Fitting_plus_v3_LocalVersion.ipynb
+
+TrainRoom_5 new nonnegativeWeights for CL075_230228 
+            modelWeights_with_sigmoid - FluoData_Fitting_plus_v3_LocalVersion.ipynb (newest)
+            modelWeights_without_sigmoid - FluoData_Fitting_plus_v3_LocalVersion.ipynb
